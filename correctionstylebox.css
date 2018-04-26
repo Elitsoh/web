@@ -1,0 +1,45 @@
+body {
+    font: 16px Tahoma, Arial, sans-serif,
+}
+
+.box {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+    transition: box-shadow 0.4 ease;
+}
+
+.box-shadow:hover {
+    box-shadow: 1px 2px 4px rgb(100, 100, 100);
+}
+
+.box-red {
+    border-color: red;
+}
+
+.box-red .box-title {
+    background-color: red;
+    color: white;
+}
+
+.box-green {
+    border-color: rgba(48, 245, 147, 0.705);
+}   
+
+.box-green .box-title {
+    background-color: rgba(48, 245, 147, 0.705);
+    color: white;
+}
+
+.box-title {
+    margin: 0;
+    /* border-bottom-style: inherit;
+    border-bottom-width: inherit;
+    border-bottom-color: #CCCCCC; */
+    border-bottom: inherit;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.box-content {
+    padding: 10px;
+}

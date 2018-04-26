@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    color:white;
+    border: 1px;
+    border-style: solid;
+    width:350px;
+}
+
+.titre {
+    border-bottom: solid;
+    border-color:white;
+
+}
+
+.box1 {
+    background-color: mediumpurple;
+}
+
+.box2 {
+    background-color: mediumslateblue;
+}
