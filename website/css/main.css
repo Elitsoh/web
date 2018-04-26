@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/**
+ * MENU
+ */
+
+.navbar {
+    background-color:#6c5ce7;
+    color: #dfe6e9;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+}
+
+.navbar a {
+    display: block;
+    padding: 0 14px;
+    transition : background-color 0.4s ease;
+}
+
+.navbar a:hover {
+    background-color:#a29bfe;
+}
+
+/**
+ *SKY
+ */
+
+.sky {
+    background: linear-gradient(#ffeaa7, #fab1a0);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.sky-title {
+    margin: 0;
+    color: white;
+}

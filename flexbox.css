@@ -1,0 +1,38 @@
+.flex-container {
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-square {
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+    border: 2px solid #000;
+}
+
+.flex-square-blue {
+    background-color: royalblue;
+}
+
+.flex-square-pink {
+    background-color: pink;
+}
+
+.flex-square-yellow {
+    background-color: yellow;
+}
+
+.flex-square-red {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.flex-square-orange {
+    background-color: orange;
+    flex-grow: 2;
+}

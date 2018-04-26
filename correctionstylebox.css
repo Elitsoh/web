@@ -8,8 +8,13 @@ body {
 }
 
 .clearfix::after {
-    content: 'Hello World !!!';
+    visibility: hidden;
+    content: '';
     clear: both;
+    overflow: auto;
+    zoom: 1;
+    display: table;
+    height: 0;
 }
 
 .box {
@@ -75,7 +80,7 @@ body {
 
 .box-img {
     float:left;
-    width:120px;
+    width:220px;
 }
 
 .box-content {
