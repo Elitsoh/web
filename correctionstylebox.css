@@ -2,14 +2,25 @@ body {
     font: 16px Tahoma, Arial, sans-serif,
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: 'Hello World !!!';
+    clear: both;
+}
+
 .box {
     border: 1px solid #CCCCCC;
     margin-bottom: 20px;
     transition: box-shadow 0.4 ease;
+    position: relative;
 }
 
 .box-shadow:hover {
-    box-shadow: 1px 2px 4px rgb(100, 100, 100);
+    box-shadow: 1px 2px 4px rgb(179, 179, 179);
 }
 
 .box-red {
@@ -30,6 +41,28 @@ body {
     color: white;
 }
 
+.box-author {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    /* border: 2px solid red; */
+}
+
+.box-author img {
+    width:60px;
+}
+
+.box-author-name {
+    position:absolute;
+    top: 25px;
+    right:23px;
+    background: red;
+    color: white;
+    padding: 2px;
+    z-index: 1;
+
+}
+
 .box-title {
     margin: 0;
     /* border-bottom-style: inherit;
@@ -40,6 +73,28 @@ body {
     font-size: 20px;
 }
 
+.box-img {
+    float:left;
+    width:120px;
+}
+
 .box-content {
-    padding: 10px;
+    padding: 16px;
+    line-height: 24px;
+}
+
+.top-page {
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+}
+
+.top-page img {
+    width:50px;
+    opacity: 0.2;
+    transition: opacity 0.4s ease;
+}
+
+.top-page img:hover {
+    opacity: 1;
 }
