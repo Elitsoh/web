@@ -21,6 +21,10 @@ a {
     height: 45px;
     line-height: 45px;
     display: flex;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 5;
 }
 
 .navbar a {
@@ -41,9 +45,143 @@ a {
     background: linear-gradient(#ffeaa7, #fab1a0);
     height: 300px;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 
 .sky-title {
+    font-size: 2em;
     margin: 0;
-    color: white;
+    color: rgb(255, 0, 76);
+    position: relative;
+    line-height: 300px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    text-align: center;
+    z-index: 3;
+}
+
+.sky-cloud1 {
+    position: absolute;
+    top: 50px;
+    animation-name: cloudMoveX;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.montgolfiere {
+    width: 170px;
+    position: absolute;
+    top: 30px;
+    animation-name: cloudMoveX;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+/* .montgolfiere {
+    width: 170px;
+    position: absolute;
+    top: 20px;
+    animation-name: cloudMoveX, cloudMoveY;
+    animation: cloudMoveX 20s linear 0 infinite 0 both;
+} */
+
+.sky-cloud2 {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    animation-name: cloudMoveX;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloudMoveX {
+    from {
+        transform: translateX(-600px)
+    }
+    to {
+        transform: translateX(1600px)
+    }
+}
+
+/* @keyframes cloudMoveY {
+    from {
+        transform: rotate(20px)    }
+    to {
+        transform: rotateY(100px)
+    }
+} */
+
+.container {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.content article {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(236, 235, 235);
+    background-color: white;
+}
+
+.content article:last-child {
+    margin: 0;
+}
+
+.container aside.sidebar {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border:2px rgb(94, 94, 94);
+}
+
+.menu a {
+    display: block;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: #dfe6e9;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .content {
+        flex-basis: 68%;
+        /* order: 1; */
+    }
+
+    .container aside.sidebar {
+        margin-top: 0;
+        flex-basis: 29.5%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .associate,
+    .network,
+    .newsletter {
+        width: 250px;     
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
